@@ -9,6 +9,20 @@
                     - header->e_ident[5] - lottle/big endian. </br>
                     - all other prints- by the pdf description.</br>
 * reset_fd: an private func that used for safe-clean the Currentfd (GLOBAL VAR)</br>
-*GLOBAL VARS: as descripted in the site.</br>
+* GLOBAL VARS: as descripted in the site.</br>
                     
+--------------------------------------------------------------------------
+# Task 1: <br />
+* header-         pointer to the beginning of the starting mapped file.</br>
+* section_header-</br>
+pointer to the first section.</br>
+valued: header+offest+(Section name string table index)*sizeOrEntry </br>
+* str_table -</br>
+pointer to the section names table.</br>
+(map_start + header->e_shoff + ((header->e_shstrndx) * (header->e_shentsize)</br>
+* curr_sec -</br>
+An iterative pointer that points on the cuurent section for frinting, changes in the for loop.</br>
+(map_start + header->e_shoff + (i * (header->e_shentsize)   NOTE:i is the foor var.</br>
+* pad_space: a local func that print space (to align the rows).</br>
+
 --------------------------------------------------------------------------
