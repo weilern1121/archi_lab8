@@ -26,3 +26,8 @@ An iterative pointer that points on the cuurent section for frinting, changes in
 * pad_space: a local func that print space (to align the rows).</br>
 
 --------------------------------------------------------------------------
+# Task 2: <br />
+* moved header to GLOBAL (because of the use in local fun).</br>
+* seek_table - itarates on all of the sections, if section type== symbol table -> print.</br>
+* sym_size=24 - because this is the total size of fields in the Elf64_Sym struct (descripted in PDF).</br>
+* sym_table - local usage of seek_table.
